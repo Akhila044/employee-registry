@@ -27,7 +27,7 @@ const Home = () => {
        <main>
         {details==null ? "loading....." : details.map((employee)=>{
              return <article key={employee.id}>
-              <img src={employee.photo} alt={employee.name} height="200" width="200"id='image' />
+              <img src={employee.photo} alt={employee.name} height="200" width="200" id='image' />
               <h1 id='home_name'>{employee.name}</h1>
               <p id='home_email'>{employee.email}</p>
               <p id='home_phone'> 📞+91 {employee.phone}</p>
